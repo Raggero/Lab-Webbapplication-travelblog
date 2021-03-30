@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Karibien</title>
+</head>
+<body>
+<section>
+<nav>
+<div class="logo">
+    <img src="https://img.icons8.com/ios/50/000000/statue-of-liberty.png" alt="" class="flyg">
+    <img src="https://img.icons8.com/ios/50/000000/airport.png" alt="" >
+    <img src="https://img.icons8.com/ios/50/000000/tower-of-pisa.png" alt="" class="flyg">
+</div>
+<ul class="nav-links">
+    <li><a href="index.html">Hem</a></li>
+    <li>
+        <a href="#">Resmål</a>
+        <ul>
+            <li><a href="kryssning.html">Karibien</a></li>
+            <li><a href="peru.html">Peru</a></li>
+            <li><a href="#">New York</a></li>
+            <li><a href="#">Venedig</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">Restyper</a>
+        <ul>
+            <li><a href="#">City</a></li>
+            <li><a href="#">Äventyr</a></li>
+            <li><a href="#">Charter</a></li>
+        </ul>
+    </li>
+</ul>
+<div class="burger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+</div>
+</nav>
+<header>
+    <h1>Kryssning i karibien</h1>
+<!--    Panoramabilden och texten läses in med fetch-->
+    <ul id="kryss"></ul>
+</header>
+<main class="main_undersida">
+    <article>
+        <img src="img/haiti.JPG" alt="" class="img_center">
+        <p>
+            Första stoppen var på haiti. Sol, bad och linbana
+        </p>
+    </article>
+    <article>
+        <img src="img/kryssning.jpg" alt="" class="img_center">
+        <p>
+            En flytande stad... Hur är det möjligt?!?
+        </p>
+    </article>
+    <article>
+        <img src="img/mexicoruins.JPG" alt="" class="img_center">
+        <p>
+            I Mexico tog vi en liten tur till ett av nya världens underverk Chicken Pizza! (aka Chichen Itza)
+        </p>
+    </article>
+    <article>
+        <img src="img/mexicobeach.JPG" alt="" class="img_center">
+        <p>
+            Bra resa med hade önskat bättre väder!
+        </p>
+    </article>
+    <article class="article_kommentar">
+        <h4>Kommentarer</h4>
+        <ul>
+            <li id="outputKommentar" class="kommentar"></li>
+            <li id="outputNamn" class="namn"></li>
+        </ul>
+        <ul>
+            <li id="storageKommentar3" class="kommentar"></li>
+            <li id="storageNamn3" class="namn"></li>
+            <li id="storageKommentar2" class="kommentar"></li>
+            <li id="storageNamn2" class="namn"></li>
+            <li id="storageKommentar1" class="kommentar"></li>
+            <li id="storageNamn1" class="namn"></li>
+        </ul>
+        <h4>Lägg till ny kommentar</h4>
+        <form id="formReg" class="colform">
+            <input type="text" id="txtNamn" class="inputform" placeholder="Skriv ditt namn">
+            <textarea name="text" rows="10" cols="30" id="txtKommentar" placeholder="Kommentera här"></textarea>
+            <p id="feedbackKommentar" class="feedback"></p>
+            <input type="submit" value="Skicka" id="submitbtn">
+        </form>
+    </article>
+
+</main>
+    <footer>
+        <ul class="footer">
+            <li><a href="#"><img src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="" ></a></li>
+            <li><a href="#"><img src="https://img.icons8.com/color/48/000000/youtube-play.png" alt="" ></a></li>
+            <li><a href="#"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="" ></a></li>
+            <li><a href="#"><img src="https://img.icons8.com/fluent/48/000000/twitter.png" alt="" ></a></li>
+        </ul>
+    </footer>
+</section>
+<script src="js/javascript-fetch.js"></script>
+<script src="js/javascript-form-karibien.js"></script>
+<script src="js/javascript-hamburgermeny.js"> </script>
+</body>
+</html>
